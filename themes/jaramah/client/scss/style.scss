@@ -1,0 +1,18 @@
+// Third party
+@import "../../node_modules/bootstrap/dist/css/bootstrap-reboot";
+@import "../../node_modules/bootstrap/dist/css/bootstrap-grid";
+
+// Fonts
+@import "./fonts/icons";
+
+// Common
+@import "./common/variables";
+@import "./common/mixins";
+@import "./common/global";
+
+// Components
+@import "./components/header";
+@import "./components/footer";
+
+// Pages
+@import "./pages/home";

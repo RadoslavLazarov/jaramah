@@ -1,0 +1,10 @@
+2020-05-25T14:08:03+00:00 CRITICAL Uncaught Error: Call to undefined function storefront_is_woocommerce_activated() in C:\xampp\htdocs\jaramah\wp-content\themes\jaramah\functions.php:51
+Stack trace:
+#0 C:\xampp\htdocs\jaramah\wp-settings.php(508): include()
+#1 C:\xampp\htdocs\jaramah\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\jaramah\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\jaramah\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\jaramah\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\jaramah\wp-content\themes\jaramah\functions.php on line 51
+
