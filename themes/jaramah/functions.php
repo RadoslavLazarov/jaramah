@@ -47,6 +47,7 @@ add_action( 'after_setup_theme', 'register_custom_nav_menus' );
 // Remove wordpress version in meta generator tag
 remove_action( 'wp_head', 'wp_generator' );
 
+
 require 'inc/storefront-functions.php';
 
 if ( storefront_is_woocommerce_activated() ) {

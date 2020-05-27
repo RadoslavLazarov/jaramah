@@ -10,27 +10,20 @@
     font-style: normal;
 }
 [class*='icon-']:before{
-    display: inline-block;
-    font-family: 'Glyphter';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+	display: inline-block;
+   font-family: 'Glyphter';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
 }
-.icon-close:before{content:'\0041';}
-.icon-diamond:before{content:'\0042';}
-.icon-four-squares:before{content:'\0043';}
-.icon-globe:before{content:'\0044';}
-.icon-hamburger:before{content:'\0045';}
-.icon-horizontal:before{content:'\0046';}
-.icon-like:before{content:'\0047';}
-.icon-plus-big:before{content:'\0048';}
-.icon-rocket:before{content:'\0049';}
-.icon-search:before{content:'\004a';}
-.icon-shopping:before{content:'\004b';}
-.icon-acc:before{content:'\004c';}
-.icon-arrow-down:before{content:'\004d';}
-.icon-arrow-right:before{content:'\004e';}
-.icon-business:before{content:'\004f';}
-.icon-cart:before{content:'\0050';}
+.icon-hamburger:before{content:'\0041';}
+.icon-arrow-right:before{content:'\0042';}
+.icon-search:before{content:'\0043';}
+.icon-cart:before{content:'\0044';}
+.icon-user:before{content:'\0045';}
+.icon-globe:before{content:'\0046';}
+.icon-arrow-left:before{content:'\0047';}
+.icon-heart:before{content:'\0048';}
+.icon-menu:before{content:'\0049';}

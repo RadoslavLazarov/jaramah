@@ -22,7 +22,7 @@
                 margin-right: 132px;
 
                 &.hamburger a:before,
-                &.four-squares a:before {
+                &.menu a:before {
                     position: absolute;
                     left: -36px;
                     width: 22px;
@@ -36,13 +36,13 @@
                 }
 
                 &.hamburger a:before {
-                    content: '\0045';
+                    content: '\0041';
                     top: 5px;
                     height: 17.5px;
                 }
 
-                &.four-squares a:before {
-                    content: '\0043';
+                &.menu a:before {
+                    content: '\0049';
                     top: 2px;
                     height: 22px;
                 }
