@@ -1,57 +1,115 @@
-#header {
+.header {
+    margin-top: 22px;
+    margin-bottom: 200px;
+    
     .custom-logo {
-        margin-top: 22px;
+        width: 200px;
+        max-width: 100%;
+        height: auto;
     }
 
-    .search-field {
-        background-color: rgba(153, 153, 153, 0.15);
-        border: none;
-        width: 644px;
-        border-radius: 40px;
-        height: 47px;
+    .icon-globe {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        color: $color-light;
+        margin-right: 20px;
     }
 
-    nav {
-        
-        ul {
-            display: flex;
-            list-style-type: none;
-            
-            li {
-                position: relative;
-                margin-right: 132px;
+    &__top {
+        margin-top: 6px;
+        margin-bottom: 11px;
 
-                &.hamburger a:before,
-                &.menu a:before {
-                    position: absolute;
-                    left: -36px;
-                    width: 22px;
-                    display: inline-block;
-                    font-family: 'Glyphter';
-                    font-style: normal;
-                    font-weight: normal;
-                    line-height: 1;
-                    -webkit-font-smoothing: antialiased;
-                    -moz-osx-font-smoothing: grayscale
+        .site-search {
+            width: 100%;
+    
+            .search-field {
+                background-color: $color-input-background;
+                border: none;
+                // width: 644px;
+                width: 100%;
+                border-radius: 40px;
+                height: 47px;
+                padding-left: 50px;
+                outline: none;
+            }
+    
+            button {
+                display: none;
+            }
+        }
+    
+        .menu-shop-menu-container {
+            height: 100%;
+    
+            #menu-shop-menu {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                padding-left: 18px;
+                list-style-type: none;
+    
+                li {
+                    margin-right: 38px;
+    
+                    i {
+                        display: flex;
+                        font-size: 25px;
+                        color: $color-light;
+                    }
                 }
+            }
+        }
+    }
 
-                &.hamburger a:before {
-                    content: '\0041';
-                    top: 5px;
-                    height: 17.5px;
+    &__nav {
+        nav {
+            margin: 16px 0;
+    
+            ul {
+                display: flex;
+                list-style-type: none;
+                
+                li {
+                    position: relative;
+                    margin-right: 132px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+    
+                    &.hamburger a:before,
+                    &.menu a:before {
+                        position: absolute;
+                        left: -36px;
+                        width: 22px;
+                        display: inline-block;
+                        font-family: 'Glyphter';
+                        font-style: normal;
+                        font-weight: normal;
+                        line-height: 1;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale
+                    }
+    
+                    &.hamburger a:before {
+                        content: '\0041';
+                        top: 5px;
+                        height: 17.5px;
+                    }
+    
+                    &.menu a:before {
+                        content: '\0049';
+                        top: 2px;
+                        height: 22px;
+                    }
+    
+                    a {
+                        color: #6C6C6C;
+                        font-size: 1.125em;
+                        font-weight: 600;
+                    }  
                 }
-
-                &.menu a:before {
-                    content: '\0049';
-                    top: 2px;
-                    height: 22px;
-                }
-
-                a {
-                    color: #6C6C6C;
-                    font-size: 1.125em;
-                    font-weight: 600;
-                }  
             }
         }
     }

@@ -1,12 +1,24 @@
 .woocommerce {
 	ul.products {
+        max-width: 1086px;
+
+        &.columns-5 li.product {
+            width: 17.496%;
+            margin-right: 3.132%;
+
+            &.last {
+                margin-right: 0;
+            }
+        }
+
 		li.product {
             overflow: hidden;
-            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
-            border-radius: 10px 10px 0px 0px;
+            border-radius: 4px 4px 0px 0px;
+            // box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
+            // border-radius: 10px 10px 0px 0px;
 
             a {
-                color: #333333;
+                color: $color-dark;
 
                 img {
                     margin-bottom: 18px;
@@ -14,20 +26,24 @@
 
                 .woocommerce-loop-product__title {
                     padding: 0 17px;
+                    font-size: 0.813rem;
+                    line-height: 1.125rem;
+                    font-weight: 600;
                 }
 
                 p {
                     padding: 0 17px;
-                    margin-bottom: 6px;
-                    font-size: 0.875rem;
+                    margin-bottom: 4px;
+                    font-size: 0.688rem;
+                    line-height: 1.125rem;
                 }
 
                 .star-rating {
                     margin: 0 0 15px 17px;
                     width: 100%;
-                    color: #F0D01A;;
+                    color: $color-product-rating;
                     letter-spacing: 8px;
-                    font-size: 0.813em;
+                    font-size: 0.563rem;
                 }
 
                 .price {
@@ -38,8 +54,9 @@
                     letter-spacing: 1px;
 
                     .woocommerce-Price-amount, ins {
-                        color: #333333;
-                        font-size: 1.250rem;
+                        color: $color-dark;
+                        font-size: 1.125rem;
+                        line-height: 1.125rem;
                         text-decoration: none;
                         font-weight: 600;
                     }
@@ -52,7 +69,8 @@
 
                     del  {
                         .woocommerce-Price-amount {
-                            font-size: 0.875rem; 
+                            font-size: 0.750rem; 
+                            line-height: 1.125rem;
                             opacity: 1;
                          }
 
@@ -66,38 +84,38 @@
                     position: absolute;
                     bottom: 15px;
                     right: 24px;
-                    font-size: 0.875rem;
-                    color: #C20000; 
+                    font-size: 0.750rem; 
+                    line-height: 1.125rem;
+                    color: $color-red; 
                 }
 
                 .discount-badge {
                     position: absolute;
                     top: 18px;
                     left: -50px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include flex-center;
+                    display: none;
                     height: 35px;
                     width: 70%;
                     transform: rotate(-45deg);
                     background-color: $color-secondary;
-                    color: #fff;
+                    color: $color-white;
                     text-transform: uppercase;
-                    font-size: 0.875rem
+                    font-size: 0.813rem;
+                    font-weight: 600;
+                    line-height: 1.125rem;
                 }
 
                 .new-badge {
                     position: absolute;
                     top: 10px;
                     left: 24px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include flex-center;
                     width: 68px;
                     height: 30px;
                     background-color: $color-primary;
-                    box-shadow: 0px 4px 20px rgba(55, 84, 170, 0.25);
-                    color: #fff;
+                    box-shadow: $box-shadow-big;
+                    color: $color-white;
                     border-radius: 10px;
                     text-transform: uppercase;
                     font-weight: 600;
@@ -122,7 +140,7 @@
                 }
                 
                 i {
-                    color: #999999;
+                    color: $color-light;
                     margin: 0;
                     font-size: 1.250rem;
                 }
@@ -131,7 +149,7 @@
                 .yith-wcwl-wishlistaddedbrowse:before {
                     content: "\f004";
                     font: normal normal normal 14px/1 FontAwesome;
-                    color: #999999;
+                    color: $color-light;
                     font-size: 1.250rem;
                 }
 

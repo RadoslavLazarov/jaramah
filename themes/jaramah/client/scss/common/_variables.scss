@@ -1,2 +1,27 @@
+// ******** Colors ********
+$color-white: #fff;
+// for fonts and borders
+$color-dark: #333333;
+$color-medium: #666666;
+$color-light: #999999;
+$color-title: #454545; // homepage titles
+// header main menu colors
+$color-menu: #B7B7B7; // main menu
+$color-submenu: #5F5F5F;
+// main site colors
 $color-primary: #FF9C00;
 $color-secondary: #008BDE;
+// other colors
+$color-red: #C20000;
+$color-green: #54B725;
+$color-product-rating: #F0D01A;
+$color-input-background: #F0F0F0;
+
+// ******** Shadows ********
+$box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.18);
+$box-shadow-big: 0px 4px 20px rgba(55, 84, 170, 0.25); // for product NEW badge
+$box-shadow-secondary: 0px 0px 9px rgba($color-secondary, 0.45); // for checkboxes
+
+// ******** Borders ********
+$rounded-small: 10px;
+$rounded-big: 50px;
