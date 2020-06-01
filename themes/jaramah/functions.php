@@ -38,7 +38,9 @@ function register_custom_nav_menus() {
     register_nav_menus( array(
         'main-menu' => 'Main menu Location',
         'shop-menu' => 'Shop menu Location',
-        ));
+        'footer-1' => 'Footer 1 menu Location',
+        'footer-2' => 'Footer 2 menu Location',
+    ));
 }
     
 add_action( 'after_setup_theme', 'register_custom_nav_menus' );

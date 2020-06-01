@@ -1,0 +1,97 @@
+footer {
+    padding-top: 30px;
+    border-top: 1px solid rgba(189, 189, 189, 0.46);
+
+    .footer {
+        margin-bottom: 200px;
+        padding: 0 15px;
+    
+        &__column {
+            // margin-right: 75px;
+            
+            h3 {
+                font-size: 1.125rem;
+                font-weight: 600;
+                color: $color-dark;
+            }
+    
+            ul {
+                padding-left: 0;
+                list-style-type: none;
+                font-size: 1.125rem;
+    
+                li {
+                    a {
+                        color: $color-medium;
+                    }
+                }
+            }
+        }
+    
+        &__payments {
+            margin-top: 13px;
+    
+            .payment {
+                display: inline-block;
+                width: 57px;
+                margin-right: 6%;
+    
+                &:nth-child(4n + 4) {
+                    margin-right: 0;
+                }
+    
+                &:nth-child(4n + 1) {
+                    margin-bottom: 20px;
+                }
+    
+                img {
+                    width: 100%;
+                }
+            }
+        } 
+    
+        &__socials {
+            display: flex;
+    
+            .social {
+                margin-right: 6px;
+    
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    
+        &__subscription-form {
+            @include flex-center;
+            margin: 55px 0 35px 0;
+        }
+    
+        &__logo {
+            .custom-logo-link {
+                display: block;
+                width: 90px;
+        
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    
+        &__copyrights {
+            @include flex-center;
+            font-size: 0.875em;
+            color: $color-light;
+        }
+    
+        &__apps {
+            display: flex;
+            justify-content: flex-end;
+    
+            a {
+                margin-left: 24px;
+            }
+        }
+    }
+}

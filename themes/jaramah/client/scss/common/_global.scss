@@ -1,11 +1,13 @@
 body {
     font-family: 'SF UI Text';
+    position: relative;
+    overflow-x: hidden;
 }
 
 @media (min-width: 1200px) {
     .container {
         // max-width: 1240px;
-        max-width: 1276px;
+        max-width: 1305px;
     }
 }
 
